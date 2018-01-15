@@ -14,7 +14,7 @@
 		<gfe-data:server host="localhost" port="40404" />
 	</gfe-data:datasource>
 
-	<gfe:cq-listener-container>
+	<gfe:cq-listener-container id="cqListenerContianer">
 		<gfe:listener ref="cqListener"
 			query="select * from /Order where customerId = 2" />
 	</gfe:cq-listener-container>

@@ -22,7 +22,7 @@
      
     <gfe:cache-server/>
      
-    <gfe:replicated-region id="Order">
+    <gfe:replicated-region id="Order" scope="DISTRIBUTED_ACK">
         <gfe:cache-listener>
             <bean class="org.springframework.data.gemfire.examples.util.LoggingCacheListener"/>
         </gfe:cache-listener>
